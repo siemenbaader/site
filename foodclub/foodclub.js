@@ -29,9 +29,40 @@ Lp.Foodclub.installIframeResizer = function(){
 	$(document.head).append( this.iframeResizerScriptTag() );
 };
 
+Lp.Foodclub.installInvoiceUnitColum = function(){ 
+
+	$(document).ready(function(){
+
+		// TH insertion
+		$('.invoiceUserTable').find('th.DescriptionCol').before('<th class="UnitCol">Unit</td>');
+
+		// Unit regex
+		unitRegex = /\((.+)\)$/ ;
+
+		// Unit Insertion
+		$('.invoiceUserTable').find('td.DescriptionCol').each(function(index, element){
+		  
+		    
+		  var unit = element.innerHTML.match(unitRegex)[1];
+		  var fieldContent = element.innerHTML.replace(unitRegex, '').trim();
+		  
+		  
+		  var unitField = $('<td class="UnitCol">' + unit + '</td>');
+		                    
+		                    
+		  $(element).before(unitField);
+		  
+		  // Trim unit out of description
+		  element.innerHTML = fieldContent;
+		  
+		})
+	})
+};
+
 
 Lp.Foodclub.initialize = function(){
 	this.installIframeResizer();
+	this.installInvoiceUnitColum();
 };
 
 // main()
