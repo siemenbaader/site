@@ -1,12 +1,12 @@
-.SourceCol,
-.ManufacturerCol,
-.CodeCol, 
-.SizeCol, 
-.SplitUnitsCol,
-.ActualPriceCol,
-.ActualUnitPriceCol,
-.MemberFeeCol,
-.TaxCol
+.normalPrintInvoices .SourceCol,
+.normalPrintInvoices .ManufacturerCol,
+.normalPrintInvoices .CodeCol, 
+.normalPrintInvoices .SizeCol, 
+.normalPrintInvoices .SplitUnitsCol,
+.normalPrintInvoices .ActualPriceCol,
+.normalPrintInvoices .ActualUnitPriceCol,
+.normalPrintInvoices .MemberFeeCol,
+.normalPrintInvoices .TaxCol
 
 {
 	display: none;

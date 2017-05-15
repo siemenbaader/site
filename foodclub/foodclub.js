@@ -59,10 +59,18 @@ Lp.Foodclub.installInvoiceUnitColum = function(){
 	})
 };
 
+Lp.Foodclub.addDeliveryDayHeader = function(){
+	var deliveryDayHeader = $('<h1>Onsdag</h1>');
+	$(document).ready(function(){
+		$('.normalPrintInvoices .invoiceUserDiv').prepend(deliveryDayHeader);
+	})
+};
+
 
 Lp.Foodclub.initialize = function(){
 	this.installIframeResizer();
 	this.installInvoiceUnitColum();
+	this.addDeliveryDayHeader();
 };
 
 // main()
