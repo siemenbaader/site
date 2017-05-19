@@ -1,12 +1,26 @@
-.normalPrintInvoices .SourceCol,
-.normalPrintInvoices .ManufacturerCol,
-.normalPrintInvoices .CodeCol, 
-.normalPrintInvoices .SizeCol, 
-.normalPrintInvoices .SplitUnitsCol,
-.normalPrintInvoices .ActualPriceCol,
-.normalPrintInvoices .ActualUnitPriceCol,
-.normalPrintInvoices .MemberFeeCol,
-.normalPrintInvoices .TaxCol
+.invoiceUserDiv .SourceCol,
+.invoiceUserDiv .ManufacturerCol,
+.invoiceUserDiv .CodeCol, 
+.invoiceUserDiv .SizeCol, 
+.invoiceUserDiv .SplitUnitsCol,
+.invoiceUserDiv .ActualPriceCol,
+.invoiceUserDiv .ActualUnitPriceCol,
+.invoiceUserDiv .MemberFeeCol,
+.invoiceUserDiv .TaxCol,
+.invoiceUserDiv .PricePerWeightCol,
+.invoiceUserDiv .WeightCol,
+
+#finalOrderTable .SourceCol,
+#finalOrderTable .ManufacturerCol,
+#finalOrderTable .CodeCol, 
+#finalOrderTable .SizeCol, 
+#finalOrderTable .SplitUnitsCol,
+#finalOrderTable .ActualPriceCol,
+#finalOrderTable .ActualUnitPriceCol,
+#finalOrderTable .MemberFeeCol,
+#finalOrderTable .TaxCol,
+#finalOrderTable .PricePerWeightCol,
+#finalOrderTable .WeightCol
 
 {
 	display: none;
