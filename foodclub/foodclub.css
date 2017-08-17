@@ -20,7 +20,9 @@
 #finalOrderTable .MemberFeeCol,
 #finalOrderTable .TaxCol,
 #finalOrderTable .PricePerWeightCol,
-#finalOrderTable .WeightCol
+#finalOrderTable .WeightCol,
+#finalOrderTable .PriceCol,
+#finalOrderTable .TotalCol
 
 {
 	display: none;
